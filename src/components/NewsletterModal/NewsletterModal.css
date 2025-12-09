@@ -1,0 +1,109 @@
+/* ====== OVERLAY ====== */
+.nm-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/* ====== MODAL ====== */
+.nm-modal {
+    background: #ffffff;
+    padding: 30px 25px;
+    width: 90%;
+    max-width: 420px;
+    border-radius: 14px;
+    text-align: center;
+    position: relative;
+    border: 1px solid #e2e2e2;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    animation: nm-fade 0.25s ease-out;
+}
+
+/* Animación */
+@keyframes nm-fade {
+    from {
+        opacity: 0;
+        transform: scale(0.94);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ====== CERRAR ====== */
+.nm-close {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: #444;
+}
+
+.nm-close:hover {
+    color: #0b4350;
+}
+
+/* ====== TEXTOS ====== */
+.nm-title {
+    margin-bottom: 10px;
+    color: #0b4350;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nm-text {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 18px;
+}
+
+/* ====== INPUT ====== */
+.nm-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    outline: none;
+    font-size: 15px;
+}
+
+.nm-input:focus {
+    border-color: #0b4350;
+}
+
+/* ====== BOTÓN ====== */
+.nm-btn {
+    width: 100%;
+    background: #0b4350;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.nm-btn:hover {
+    opacity: 0.85;
+}
+
+/* ====== LEGAL ====== */
+.nm-legal {
+    display: block;
+    margin-top: 12px;
+    font-size: 12px;
+    color: #777;
+}

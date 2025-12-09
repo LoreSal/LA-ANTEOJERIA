@@ -1,0 +1,28 @@
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 80px; /* ✔ espacio para WhatsApp */
+    background-color: #0b4350;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    transform: scale(1.1);
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll-to-top.hide {
+    opacity: 0;
+    pointer-events: none;
+}

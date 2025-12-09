@@ -1,0 +1,156 @@
+/* Contenedor general */
+.detalle-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 30px;
+  animation: fadeIn 0.4s ease;
+}
+
+.detalle-wrapper {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  gap: 40px;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.08);
+}
+
+/* Imagen con barra lateral */
+.detalle-img-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vertical-bar {
+  position: absolute;
+  left: 0;
+  width: 6px;
+  height: 90%;
+  background: linear-gradient(180deg, #0056b3, #00408a);
+  border-radius: 6px;
+}
+
+.detalle-imagen {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.15);
+}
+
+/* Texto derecha */
+.detalle-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.detalle-nombre {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.detalle-marca {
+  color: #777;
+  font-size: 0.95rem;
+}
+
+.detalle-descripcion,
+.detalle-item {
+  font-size: 1.05rem;
+  color: #444;
+}
+
+.detalle-precio {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #444;
+}
+
+.detalle-stock {
+  color: #1a8e3c;
+  font-weight: 600;
+}
+
+/* Botones */
+.btn-agregar,
+.btn-volver {
+  padding: 14px 26px;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: 0.25s ease;
+}
+
+.btn-agregar {
+  background: #0b4350;
+  color: #fff;
+}
+.btn-agregar:hover {
+  background: #0b4350;
+}
+
+.btn-volver {
+  background: #eee;
+  color: #333;
+  margin-top: 5px;
+}
+.btn-volver:hover {
+  background: #ddd;
+}
+
+.divider {
+  margin: 15px 0;
+  border: none;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+/* Secciones inferiores */
+.detalle-extra p {
+  color: #444;
+  font-size: 0.95rem;
+}
+
+/* Productos relacionados */
+.relacionados {
+  margin-top: 40px;
+  text-align: center;
+}
+.relacionados h3 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+/* Animación suave */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .detalle-wrapper {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .vertical-bar {
+    display: none;
+  }
+
+  .detalle-imagen {
+    max-width: 290px;
+  }
+
+  .btn-agregar,
+  .btn-volver {
+    width: 100%;
+  }
+}

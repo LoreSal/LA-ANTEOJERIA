@@ -1,0 +1,111 @@
+/* ============================= */
+/* 🔍 CONTENEDOR GENERAL */
+/* ============================= */
+
+.buscar-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ============================= */
+/* 🔍 TÍTULO */
+/* ============================= */
+
+.buscar-titulo {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #222;
+}
+
+.buscar-titulo span {
+  color: #6e3cbc; /* Lila elegante */
+  font-style: italic;
+}
+
+/* ============================= */
+/* 🔍 MENSAJE SIN RESULTADOS */
+/* ============================= */
+
+.buscar-sin-resultados {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 40px;
+  color: #999;
+}
+
+/* ============================= */
+/* 🔍 LOADING */
+/* ============================= */
+
+.buscar-loading {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 50px;
+  color: #6e3cbc;
+}
+
+/* ============================= */
+/* 🔍 GRID DE PRODUCTOS */
+/* ============================= */
+
+.buscar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* ============================= */
+/* 🔍 CARD DE PRODUCTO */
+/* ============================= */
+
+.buscar-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0px 3px 12px rgba(0,0,0,0.08);
+  transition: 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buscar-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 18px rgba(0,0,0,0.12);
+}
+
+.buscar-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.buscar-card h3 {
+  font-size: 18px;
+  margin: 8px 0 4px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.buscar-marca {
+  font-size: 14px;
+  color: #6e3cbc;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.buscar-precio {
+  font-size: 17px;
+  font-weight: 700;
+  color: #222;
+  margin-top: 5px;
+}

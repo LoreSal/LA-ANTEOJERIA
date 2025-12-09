@@ -1,0 +1,132 @@
+/* ==================== GRID DE PRODUCTOS ==================== */
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 0 20px;
+  margin-top: 2rem;
+}
+
+/* ==================== CARD ==================== */
+
+.producto-card {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform .2s ease;
+}
+
+.producto-card:hover {
+  transform: scale(1.02);
+}
+
+/* ==================== IMAGEN ==================== */
+
+.producto-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+/* ==================== INFO ==================== */
+
+.producto-info {
+  width: 100%;
+  text-align: left;
+}
+
+.producto-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.producto-info .marca {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.producto-info .precio {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 8px 0;
+  color: #2a2a2a;
+}
+
+/* ==================== BOTÓN AGREGAR ==================== */
+
+.btn-agregar {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: darkolivegreen;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  transition: background-color 0.25s ease;
+}
+
+.btn-agregar:hover {
+  background-color: #4b6f3a;
+}
+
+/* ==================== BOTÓN DETALLE ==================== */
+
+.btn-detalle {
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none; 
+  transition: background-color 0.25s ease;
+  width: 100%;
+}
+
+.btn-detalle:hover {
+  background-color: #111;
+}
+
+/* ==================== PAGINACIÓN ==================== */
+
+.paginacion {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 2rem 0;
+}
+
+.paginacion button {
+  border: 1px solid #ccc;
+  background-color: #f9f9f9; /* mismo color que las tarjetas */
+  color: #333;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.paginacion button:hover {
+  background-color: darkolivegreen; /* mismo que btn-agregar */
+  color: white;
+  border-color: darkolivegreen;
+}
+
+.paginacion button.activo {
+  background-color: #333; /* mismo que btn-detalle */
+  color: white;
+  border-color: #333;
+}
+

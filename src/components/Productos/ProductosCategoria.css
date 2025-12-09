@@ -1,0 +1,120 @@
+/* ============================ */
+/*   🎨 ESTILO LA ANTEOJERÍA    */
+/* ============================ */
+
+.categoria-container {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Título */
+.categoria-titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #0b4350;
+    animation: fadeUp 0.6s ease-out;
+}
+
+/* Grid de productos */
+.categoria-col {
+    margin-bottom: 25px;
+}
+
+/* Tarjetas */
+.categoria-card {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.25s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+.categoria-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* Imágenes */
+.categoria-card img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    background-color: #f8f8f8;
+}
+
+/* Cuerpo de la tarjeta */
+.categoria-card .card-body {
+    padding: 18px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0b4350;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Precio */
+.precio {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #0b4350;
+    margin: 8px 0 14px;
+}
+
+/* ============================ */
+/*   🛒 BOTONES BOUTIQUE         */
+/* ============================ */
+
+/* Botón principal */
+.custom-btn {
+    background-color: #0b4350 !important;
+    border: none !important;
+    padding: 10px 16px;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white !important;
+    transition: 0.25s ease;
+}
+
+.custom-btn:hover {
+    opacity: 0.85;
+    transform: scale(1.03);
+}
+
+/* Botón Outline */
+.custom-outline-btn {
+    border: 2px solid #0b4350 !important;
+    background: transparent !important;
+    color: #0b4350 !important;
+    padding: 8px 16px;
+    width: 100%;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.25s ease;
+}
+
+.custom-outline-btn:hover {
+    background: #0b4350 !important;
+    color: white !important;
+    transform: scale(1.03);
+}
+
+/* ============================ */
+/*   ANIMACIÓN SUTIL             */
+/* ============================ */
+
+@keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}

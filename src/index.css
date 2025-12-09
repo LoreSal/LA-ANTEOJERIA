@@ -1,0 +1,83 @@
+/* ========================== */
+/* 🌐 ESTILOS GLOBALES LA ANTEOJERÍA */
+/* ========================== */
+
+/* RESET GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f6ff;
+  color: #2d2d2d;
+  overflow-x: hidden;
+}
+
+/* ENLACES Y TIPOGRAFÍA */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #625fa2; 
+}
+
+/* IMÁGENES GLOBALES */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 🔹 EXCEPCIÓN: iconos flotantes o botones pequeños */
+.whatsapp-icon,
+.icon-fixed {
+  width: 35px !important;
+  height: 35px !important;
+  max-width: none !important;
+  display: inline-block !important;
+}
+
+/* CONTENEDORES GENERALES */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* BOTÓN DE ACCIÓN (usado en varias secciones) */
+.cta-button {
+  display: inline-block;
+  background-color: #625fa2;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: #4e48a0;
+  transform: translateY(-2px);
+}
+
+/* SCROLLBAR PERSONALIZADO (opcional) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c5b7f0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+}

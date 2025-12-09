@@ -1,0 +1,176 @@
+/* ========================== */
+/* 🌟Fondo general del carrito */
+/* ========================== */
+.carrito-container {
+    background-color: #e4dddd;
+    padding: 25px;
+    max-width: 900px;
+    margin: 40px auto;
+    border-radius: 16px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e6e6e6;
+}
+
+.carrito-titulo {
+    font-weight: 700;
+    text-align: start;
+    font-size: 2rem;
+    color: #0b4350;
+}
+
+.carrito-mensaje-vacio {
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #e8f2ec;
+    color: #1a1a1a;
+    border-radius: 12px;
+    border: 1px dashed #14532d;
+    padding: 30px;
+    text-align: center;
+}
+
+/* ============================== */
+/*     📌 Ítems del carrito      */
+/* ============================== */
+.carrito-item {
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 20px;
+    border: 1px solid #e0e6e3;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.carrito-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.carrito-item-titulo {
+    font-weight: 600;
+    color: #14532d;
+}
+
+.precio-unitario {
+    font-size: 0.9rem;
+    color: #6f7c78;
+}
+
+/* ============================ */
+/* 🖼️ Imágenes dentro del carrito */
+/* ============================ */
+.carrito-img {
+    width: 80px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .carrito-img {
+        width: 65px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carrito-img {
+        width: 50px;
+    }
+}
+
+
+/* ======================= */
+/* ➕➖ Botones de cantidad */
+/* ======================= */
+.btn-cantidad {
+    border: 2px solid #14532d;
+    background-color: transparent;
+    color: #14532d;
+    border-radius: 8px;
+    padding: 4px 12px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    transition: all 0.25s;
+}
+
+.btn-cantidad:hover {
+    background-color: #14532d;
+    color: white;
+}
+
+.item-subtotal {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.btn-eliminar {
+    background-color: #d9534f;
+    border: none;
+    border-radius: 10px;
+    padding: 7px 12px;
+    font-weight: bold;
+    transition: background-color 0.25s;
+}
+
+.btn-eliminar:hover {
+    background-color: #b94440;
+}
+
+/* ======= */
+/* 💲Total */
+/* ======= */
+.carrito-total-card {
+    margin-top: 30px;
+    background-color: #e8f2ec;
+    border-radius: 14px;
+    border: 1px solid #14532d33;
+    padding: 25px;
+}
+
+.carrito-total {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #444;
+}
+
+/* ========== */
+/* 🛒 Botones */
+/* ========== */
+.btn-pagar {
+    background-color: #14532d;
+    border-radius: 10px;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: white;
+    transition: 0.25s ease;
+}
+
+.btn-pagar:hover {
+    background-color: #0f3c21;
+    transform: scale(1.05);
+}
+
+.btn-vaciar {
+    background-color: #555;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    transition: opacity 0.25s;
+}
+
+.btn-vaciar:hover {
+    opacity: 0.8;
+}
+
+/* ================================ */
+/* 📱 Ajustes EXTRA para pantallas pequeñas */
+/* ================================ */
+@media (max-width: 480px) {
+    .carrito-item {
+        padding: 12px;
+    }
+}

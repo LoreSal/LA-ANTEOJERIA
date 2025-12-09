@@ -1,0 +1,149 @@
+/* ========= FOOTER ELEGANTE BOUTIQUE ========= */
+
+.footer-container {
+    background-color: #ffffff;
+    border-top: 1px solid #e5e5e5;
+    padding: 40px 20px 10px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Contenido principal */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+/* Columnas */
+.footer-col {
+    flex: 1;
+    min-width: 240px;
+}
+
+.footer-title {
+    color: #0b4350; /* Color acento */
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-text {
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+/* ========= NEWSLETTER EN PRIMERA COLUMNA ========= */
+
+.newsletter-block {
+    margin-top: 20px;
+}
+
+.newsletter-block h4 {
+    margin-bottom: 6px;
+    color: #0b4350;
+}
+
+/* Botón que abre el modal */
+.footer-newsletter-btn {
+    background-color: #0b4350;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    margin-top: 10px;
+}
+
+.footer-newsletter-btn:hover {
+    opacity: 0.85;
+}
+
+/* ========= NAVEGACIÓN ========= */
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 6px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    transition: 0.2s;
+}
+
+.footer-links a:hover {
+    color: #0b4350;
+    margin-left: 4px;
+}
+
+/* ========= CONTACTO ========= */
+
+.footer-col p {
+    margin: 6px 0;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+/* Redes sociales */
+.footer-social {
+    margin-top: 10px;
+    display: flex;
+    gap: 12px;
+}
+
+.social-icon {
+    font-size: 22px;
+    color: #0b4350;
+    transition: 0.2s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* ========= FRANJA INFERIOR ========= */
+
+.footer-bottom {
+    margin-top: 30px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    border-top: 1px solid #e5e5e5;
+}
+
+/* ========= RESPONSIVE ========= */
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-col p {
+        justify-content: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .footer-newsletter-btn {
+        width: 60%;
+        margin: 10px auto 0;
+        display: block;
+    }
+}

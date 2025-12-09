@@ -1,0 +1,86 @@
+
+/* ========================== */
+/*          🌟LOGIN          */
+/* ========================== */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.login-card {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 35px;
+    text-align: center;
+    border: 1px solid #d8d8d8;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+}
+
+.login-card h1 {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+.input-login {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.input-login:focus {
+    border-color: #0b4350;
+    box-shadow: 0 0 4px rgba(11, 67, 80, 0.4);
+}
+/* ========================== */
+/*         🌟Botón           */
+/* ========================== */
+.btn-login {
+    padding: 12px 25px;
+    background-color: #0b4350;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    margin: 15px auto 0 auto; 
+    display: block;           
+    width: fit-content;
+}
+
+
+.btn-login:hover {
+    background-color: #115c69;
+}
+
+/* ========================== */
+/*       🌟Error             */
+/* ========================== */
+.error-login {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+/* ========================== */
+/*  🌟Leyenda para usuarios   */
+/* ========================== */
+.login-leyenda {
+    margin-top: 18px;
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+}

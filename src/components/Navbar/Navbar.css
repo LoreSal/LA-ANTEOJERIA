@@ -1,0 +1,184 @@
+/* ========= NAVBAR GENERAL ========= */
+.navbar-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    font-family: 'Arial', sans-serif;
+}
+
+/* ========= FILA SUPERIOR ========= */
+/* Estructura: LOGO | BUSCADOR | ICONOS */
+
+.navbar-top-ml {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    gap: 15px;
+}
+
+/* LOGO */
+.navbar-logo-img {
+    height: 85px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    cursor: pointer;
+}
+
+/* BUSCADOR estilo Mercado Libre */
+.navbar-search-ml {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 0 08px;
+    border: 1px solid #ddd;
+    height: 40px;
+}
+
+.navbar-search-ml input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-btn-ml {
+    background: #0b4350; /* color acento */
+    border: none;
+    color: white;
+    padding: 0px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    padding: 0 12px;
+}
+
+.search-btn-ml:hover {
+    opacity: 0.8;
+}
+
+/* ICONOS DERECHA */
+.navbar-icons-ml {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #222;
+    font-size: 18px;
+    position: relative;
+}
+
+.icon-btn:hover {
+    color: #0b4350;
+}
+
+/* Carrito con numerito */
+.cart-icon-ml {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background: #0b4350;
+    color: #fff;
+    font-size: 11px;
+    padding: 2px 5px;
+    border-radius: 10px;
+}
+
+/* Botón hamburguesa (mobile) */
+.hamburger-btn-ml {
+    background: none;
+    border: none;
+    display: none;
+}
+
+/* ========= FILA DE CATEGORÍAS ========= */
+
+.navbar-categorias-ml {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 12px 0;
+    background-color: #ffffff;
+    border-top: 1px solid #e5e5e5;
+}
+
+.navbar-categorias-ml li {
+    list-style: none;
+}
+
+.navbar-categorias-ml a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s;
+}
+
+.navbar-categorias-ml a:hover {
+    border-color: #0b4350;
+    color: #0b4350;
+}
+
+/* ========= RESPONSIVE ========= */
+
+@media (max-width: 900px) {
+
+    .navbar-top-ml {
+        gap: 10px;
+    }
+
+    .navbar-search-ml {
+        padding: 0 5px;
+    }
+
+    .navbar-search-ml input {
+        font-size: 14px;
+    }
+
+    /* Hamburguesa aparece */
+    .hamburger-btn-ml {
+        display: block;
+        color: #333;
+    }
+
+    /* Ocultamos categorías hasta abrir menú */
+    .navbar-categorias-ml {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 20px 0;
+        display: none;
+    }
+
+    .navbar-categorias-ml.open {
+        display: flex;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .navbar-logo-img {
+        height: 48px;
+    }
+
+    .navbar-top-ml {
+        padding: 10px;
+    }
+}

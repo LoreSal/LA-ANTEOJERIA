@@ -1,0 +1,64 @@
+.seccion-resenas {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: #f8f8f8;
+  font-family: "Poppins", sans-serif;
+}
+
+.seccion-resenas h2 {
+  color: #0b4350;
+  font-size: 2em;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  animation: fadeUp 0.8s forwards;
+}
+
+.reseñas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.resena-card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  max-width: 320px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resena-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.resena-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1rem auto; /* 🔥 CENTRA DE VERDAD */
+  display: block;           /* 🔥 NECESARIO PARA QUE AUTO FUNCIONE */
+  border: 3px solid #0b4350;
+  animation: fadeUp 0.8s forwards;
+}
+
+
+.resena-texto {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 1rem;
+  animation: fadeUp 0.8s forwards;
+}
+
+.nombre-cliente {
+  font-weight: 600;
+  color: #0b4350;
+  font-size: 1rem;
+  animation: fadeUp 0.8s forwards;
+}
