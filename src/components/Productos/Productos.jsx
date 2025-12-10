@@ -11,7 +11,7 @@ function Productos() {
 
   const API_URL = "https://6927a7d6b35b4ffc50129e0e.mockapi.io/api/producto1";
 
-  // 🔥 PAGINACIÓN
+  // PAGINACIÓN
   const [paginaActual, setPaginaActual] = useState(1);
   const productosPorPagina = 12;
 
@@ -31,7 +31,7 @@ function Productos() {
   if (cargando)
     return <p style={{ textAlign: "center" }}>Cargando productos...</p>;
 
-  // 🔥 Productos según la página
+  //  Productos según la página
   const indexUltimo = paginaActual * productosPorPagina;
   const indexPrimero = indexUltimo - productosPorPagina;
   const productosActuales = productos.slice(indexPrimero, indexUltimo);
@@ -54,7 +54,7 @@ function Productos() {
               <p className="marca">{prod.marca}</p>
               <p className="precio">${prod.precio}</p>
 
-              {/* 🔥 BOTÓN NUEVO */}
+              {/*  BOTÓN  */}
               <button
                 className="btn-agregar"
                 onClick={() => agregarAlCarrito(prod)}
@@ -70,7 +70,7 @@ function Productos() {
         ))}
       </div>
 
-      {/* 🔥 BOTONES DE PAGINACIÓN */}
+      {/*  BOTONES DE PAGINACIÓN */}
 <div className="paginacion">
   {Array.from({ length: totalPaginas }, (_, i) => i + 1).map((num) => (
     <button

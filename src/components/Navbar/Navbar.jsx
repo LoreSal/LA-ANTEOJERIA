@@ -32,7 +32,7 @@ function Navbar() {
     return (
         <nav className="navbar-container">
 
-            {/* 🟨 FILA SUPERIOR */}
+            {/* FILA SUPERIOR */}
             <div className="navbar-top-ml">
 
                 {/* LOGO */}

@@ -36,7 +36,7 @@ const ProductoDetalle = () => {
       </Helmet>
 
       <div className="detalle-wrapper">
-        {/* IZQUIERDA - Imagen */}
+        {/* Imagen */}
         <div className="detalle-img-container">
           <div className="vertical-bar"></div>
           <img
@@ -46,7 +46,7 @@ const ProductoDetalle = () => {
           />
         </div>
 
-        {/* DERECHA - Info */}
+        {/* Info */}
         <div className="detalle-info">
 
           <h2 className="detalle-nombre">{producto.nombre}</h2>

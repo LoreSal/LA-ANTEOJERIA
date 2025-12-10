@@ -51,7 +51,7 @@ img {
   padding: 1rem;
 }
 
-/* BOTÓN DE ACCIÓN (usado en varias secciones) */
+/* BOTÓN DE ACCIÓN  */
 .cta-button {
   display: inline-block;
   background-color: #625fa2;
@@ -68,7 +68,7 @@ img {
   transform: translateY(-2px);
 }
 
-/* SCROLLBAR PERSONALIZADO (opcional) */
+/* BARRA DE DESPLAZAMIENTO */
 ::-webkit-scrollbar {
   width: 8px;
 }

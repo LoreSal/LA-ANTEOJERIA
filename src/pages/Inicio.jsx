@@ -51,7 +51,7 @@ function Inicio() {
 
             {/* ⭐ BANNER KENTA */}
             <header className="kenta-hero">
-                <img src={modeloImagen} alt="Colección Kenta de La Anteojería" className="kenta-img"/>
+                <img src={modeloImagen} alt="Colección Kenta de La Anteojería" className="kenta-img" />
                 <div className="kenta-overlay"></div>
                 <div className="kenta-text">
                     <h2 className="kenta-title">Colección Exclusiva</h2>
@@ -65,12 +65,10 @@ function Inicio() {
             <section className="sobre-nosotros">
                 <h2>Sobre Nosotros</h2>
                 <p>
-                    En La Anteojería nos apasiona ofrecer lentes de alta calidad y marcas reconocidas. 
+                    En La Anteojería nos apasiona ofrecer lentes de alta calidad y marcas reconocidas.
                     Nuestro objetivo es que encuentres el estilo perfecto y la comodidad que tus ojos merecen.
                 </p>
             </section>
-
-            
 
             {/* ⭐ PRODUCTOS DESTACADOS */}
             <section className="destacados-container">
@@ -79,44 +77,39 @@ function Inicio() {
                     {productosDestacados.length > 0 ? (
                         productosDestacados.map(producto => (
                             <div key={producto.id} className="destacado-card">
-                                <img src={producto.imagen} alt={producto.nombre} className="destacado-img"/>
+                                <img src={producto.imagen} alt={producto.nombre} className="destacado-img" />
                                 <h4 className="destacado-nombre">{producto.nombre}</h4>
                                 <p className="destacado-marca">{producto.marca}</p>
                                 <p className="destacado-precio">${producto.precio}</p>
                                 <Link to={`/producto/${producto.id}`} className="ver-detalles-btn">
-  Ver Detalles
-</Link>
-
-                                </div>
+                                    Ver Detalles
+                                </Link>
+                            </div>
                         ))
-                    ) : (
-                        <p className="loading-text">Cargando productos...</p>
-                    )}
+                    ) : (<p className="loading-text">Cargando productos...</p>)}
                 </div>
             </section>
 
             {/* ⭐ BENEFICIOS */}
- <section className="beneficios">
-    <div className="beneficio-card">
-        <LuTruck className="beneficio-icon" />
-        <h3>Entrega Rápida</h3>
-        <p>Recibí tus lentes en tiempo récord con nuestro servicio ágil y confiable.</p>
-    </div>
+            <section className="beneficios">
+                <div className="beneficio-card">
+                    <LuTruck className="beneficio-icon" />
+                    <h3>Entrega Rápida</h3>
+                    <p>Recibí tus lentes en tiempo récord con nuestro servicio ágil y confiable.</p>
+                </div>
 
-    <div className="beneficio-card">
-        <LuCog className="beneficio-icon" />
-        <h3>Lentes a Medida</h3>
-        <p>Adaptamos cada producto a tus necesidades visuales y estilo personal.</p>
-    </div>
+                <div className="beneficio-card">
+                    <LuCog className="beneficio-icon" />
+                    <h3>Lentes a Medida</h3>
+                    <p>Adaptamos cada producto a tus necesidades visuales y estilo personal.</p>
+                </div>
 
-    <div className="beneficio-card">
-        <LuUserCheck className="beneficio-icon" />
-        <h3>Asesoramiento Profesional</h3>
-        <p>Nuestro equipo te ayuda a elegir los lentes ideales para vos.</p>
-    </div>
-</section>
-
-
+                <div className="beneficio-card">
+                    <LuUserCheck className="beneficio-icon" />
+                    <h3>Asesoramiento Profesional</h3>
+                    <p>Nuestro equipo te ayuda a elegir los lentes ideales para vos.</p>
+                </div>
+            </section>
 
             {/* ⭐ MARCAS */}
             <section className="marcas">
@@ -129,7 +122,7 @@ function Inicio() {
                     <img src={logoArmani} alt="Armani" />
                     <img src={logoPrada} alt="Prada" />
                     <img src={logoBurberry} alt="Burberry" />
-                    <img src={logoMood} alt="Mood"/>
+                    <img src={logoMood} alt="Mood" />
                     <img src={logoKenta} alt="Kenta" />
                     <img src={logoVogue} alt="Vogue" />
                     <img src={logoWink} alt="Wink" />
@@ -140,15 +133,15 @@ function Inicio() {
             {/* ⭐ RESEÑAS */}
             <Reseñas />
 
-           {/* ⭐ CTA FINAL */}
-<section className="cta-final">
-  <img src={ctaNueva} alt="Colección completa" className="cta-img" />
-  <div className="cta-overlay"></div>
-  <div className="cta-text">
-    <h2>Explorá nuestra colección completa</h2>
-    <Link to="/productos" className="cta-btn">Ver Productos</Link>
-  </div>
-</section>
+            {/* ⭐ CTA FINAL */}
+            <section className="cta-final">
+                <img src={ctaNueva} alt="Colección completa" className="cta-img" />
+                <div className="cta-overlay"></div>
+                <div className="cta-text">
+                    <h2>Explorá nuestra colección completa</h2>
+                    <Link to="/productos" className="cta-btn">Ver Productos</Link>
+                </div>
+            </section>
 
         </>
     );

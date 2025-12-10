@@ -26,7 +26,6 @@ const CrearProducto = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // VALIDACIONES QUE PIDE EL PROFE
     if (!form.nombre || !form.precio || !form.descripcion || !form.imagen || !form.categoria) {
       return setError("Todos los campos son obligatorios.");
     }

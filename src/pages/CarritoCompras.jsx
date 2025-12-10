@@ -14,12 +14,12 @@ const CarritoCompras = () => {
 
     const handleCloseModal = () => {
         setShowModal(false);
-        vaciarCarrito(); // opcional
+        vaciarCarrito();
     };
 
     return (
         <Container className="carrito-container">
-            <h2 className="carrito-titulo">🛍️ Tu Carrito</h2>
+            <h2 className="carrito-titulo"> Tu Carrito</h2>
 
             {carrito.length === 0 ? (
                 <p className="carrito-mensaje-vacio">
@@ -33,7 +33,7 @@ const CarritoCompras = () => {
                                 <Card.Body>
                                     <Row className="align-items-center">
                                         
-                                        {/* Imagen del producto */}
+                                        {/* Imagen del Producto */}
                                         <Col md={2} className="text-center">
                                             <img
                                                 src={item.imagen}
@@ -98,7 +98,7 @@ const CarritoCompras = () => {
                 </>
             )}
 
-            {/* MODAL BOUTIQUE */}
+            {/* MODAL */}
             {showModal && (
                 <div className="nm-overlay" onClick={handleCloseModal}>
                     <div className="nm-modal" onClick={(e) => e.stopPropagation()}>

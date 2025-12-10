@@ -1,4 +1,6 @@
+/* ========================== */
 /* CARRITO GLOBAL + PERSISTENCIA */
+/* ========================== */
 import { createContext, useContext, useEffect, useState } from "react";
 
 const CarritoContext = createContext();
@@ -14,7 +16,7 @@ export const CarritoProvider = ({ children }) => {
     localStorage.setItem("carrito", JSON.stringify(carrito));
   }, [carrito]);
 
-  // ➕ AGREGAR O SUMAR CANTIDAD (CORREGIDO)
+  //  AGREGAR CANTIDAD
   const agregarAlCarrito = (producto) => {
     setCarrito((prev) => {
       const existe = prev.find((item) => item.id === producto.id);
@@ -31,7 +33,7 @@ export const CarritoProvider = ({ children }) => {
     });
   };
 
-  // ➖ RESTAR CANTIDAD (CORREGIDO)
+  // RESTAR CANTIDAD
   const restarCantidad = (id) => {
     setCarrito((prev) =>
       prev
@@ -44,12 +46,12 @@ export const CarritoProvider = ({ children }) => {
     );
   };
 
-  // ❌ ELIMINAR POR COMPLETO
+  //  ELIMINAR POR COMPLETO
   const eliminarDelCarrito = (id) => {
     setCarrito((prev) => prev.filter((item) => item.id !== id));
   };
 
-  // 🗑 VACIAR CARRO (CORREGIDO)
+  // VACIAR CARRITO
   const vaciarCarrito = () => setCarrito([]);
 
   return (

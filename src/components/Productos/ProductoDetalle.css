@@ -1,4 +1,6 @@
+/*======================*/
 /* Contenedor general */
+/*======================*/
 .detalle-container {
   max-width: 1200px;
   margin: 50px auto;
@@ -16,7 +18,9 @@
   box-shadow: 0 6px 28px rgba(0, 0, 0, 0.08);
 }
 
+/*===========================*/
 /* Imagen con barra lateral */
+/*=========================*/
 .detalle-img-container {
   position: relative;
   display: flex;
@@ -41,7 +45,9 @@
   box-shadow: 0 5px 22px rgba(0, 0, 0, 0.15);
 }
 
-/* Texto derecha */
+/*======================*/
+/*    Texto derecha     */
+/*======================*/
 .detalle-info {
   display: flex;
   flex-direction: column;
@@ -76,7 +82,9 @@
   font-weight: 600;
 }
 
-/* Botones */
+/*======================*/
+/*      Botones         */
+/*======================*/
 .btn-agregar,
 .btn-volver {
   padding: 14px 26px;
@@ -111,13 +119,18 @@
   border-bottom: 1px solid #e6e6e6;
 }
 
+/*======================*/
 /* Secciones inferiores */
+/*======================*/
 .detalle-extra p {
   color: #444;
   font-size: 0.95rem;
 }
 
+/*=========================*/
 /* Productos relacionados */
+/*=======================*/
+
 .relacionados {
   margin-top: 40px;
   text-align: center;
@@ -128,13 +141,17 @@
   color: #222;
 }
 
-/* Animación suave */
+/*======================*/
+/*    Animación suave   */
+/*======================*/
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive */
+/*======================*/
+/*      Responsive      */
+/*======================*/
 @media (max-width: 900px) {
   .detalle-wrapper {
     grid-template-columns: 1fr;

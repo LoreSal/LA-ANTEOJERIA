@@ -32,10 +32,8 @@ const EditarProducto = () => {
       } catch (err) {
         setError(err.message);
       }
-
       setLoading(false);
     };
-
     fetchProducto();
   }, [id]);
 
@@ -49,7 +47,6 @@ const EditarProducto = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // MISMAS VALIDACIONES
     if (!form.nombre || !form.precio || !form.descripcion || !form.imagen || !form.categoria) {
       return setError("Todos los campos son obligatorios.");
     }
