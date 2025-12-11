@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { FaShippingFast, FaTools, FaUserCheck } from "react-icons/fa";
 import { LuTruck, LuCog, LuUserCheck } from "react-icons/lu";
 import { Link } from 'react-router-dom';
 import '../assets/css/inicio/inicio.css';
@@ -17,7 +16,6 @@ import logoVogue from '../assets/img/Marcas/vogue.png';
 import logoWink from '../assets/img/Marcas/wink.png';
 import Reseñas from '../components/Reseñas/Reseñas';
 import { Helmet } from "react-helmet-async";
-import { i } from 'framer-motion/client';
 import ctaNueva from '../assets/img/Fondo/Vidriera.webp';
 
 
