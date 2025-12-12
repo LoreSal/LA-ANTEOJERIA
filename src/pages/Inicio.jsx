@@ -11,7 +11,7 @@ import logoArmani from '../assets/img/Marcas/armani.png';
 import logoPrada from '../assets/img/Marcas/prada.png';
 import logoMood from '../assets/img/Marcas/mood.png';
 import logoBurberry from '../assets/img/Marcas/burberry.png';
-import logoKenta from '../assets/img/Marcas/Kenta.jpg';
+import logoKenta from '../assets/img/Marcas/kenta.jpg';
 import logoVogue from '../assets/img/Marcas/vogue.png';
 import logoWink from '../assets/img/Marcas/wink.png';
 import Reseñas from '../components/Reseñas/Reseñas';
