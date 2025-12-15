@@ -20,7 +20,7 @@ import ProductosCategoria from './components/Productos/ProductosCategoria';
 import RutaProtegidaAdmin from "./components/RutaProtegida/RutaProtegidaAdmin";
 import Buscar from './components/Buscar/Buscar';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
-
+import ScrollToTopRoute from './components/ScrollToTop/ScrollToTopRoute';
 
 function App() {
 
@@ -35,6 +35,9 @@ function App() {
 
     return (
         <div>
+            {/* 🔁 Scroll automático por cambio de ruta */}
+            <ScrollToTopRoute />
+
 
             <Navbar
                 cantidadItems={carrito.length}
@@ -63,7 +66,7 @@ function App() {
                 <Route path="/categoria/:categoria" element={<ProductosCategoria />} />
 
                 {/* BUSCADOR  */}
-                <Route path="/buscar" element={<Buscar />} />  
+                <Route path="/buscar" element={<Buscar />} />
 
                 {/* LOGIN */}
                 <Route
@@ -120,6 +123,7 @@ function App() {
 
             <WhatsappBoton />
             <NewsletterModal isOpen={isNewsletterOpen} onClose={closeNewsletterModal} />
+            {/* 🔼 Botón visual */}
             <ScrollToTop />
             <Footer openNewsletterModal={openNewsletterModal} />
         </div>

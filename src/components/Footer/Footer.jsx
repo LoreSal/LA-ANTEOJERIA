@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Footer.css";
-
+import { Link } from "react-router-dom";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
@@ -42,13 +42,14 @@ function Footer() {
                     <div className="footer-col">
                         <h4>Navegación</h4>
                         <ul className="footer-links">
-                            <li><a href="/categoria/anteojos de sol">Anteojos de Sol</a></li>
-                            <li><a href="/categoria/armazones recetados">Armazones Recetados</a></li>
-                            <li><a href="/categoria/lentes de contacto">Lentes de Contacto</a></li>
-                            <li><a href="/categoria/accesorios">Accesorios</a></li>
-                            <li><a href="/categoria/kenta">KENTA</a></li>
+                            <li><Link to="/categoria/anteojos%20de%20sol">Anteojos de Sol</Link></li>
+                            <li><Link to="/categoria/armazones%20recetados">Armazones Recetados</Link></li>
+                            <li><Link to="/categoria/lentes%20de%20contacto">Lentes de Contacto</Link></li>
+                            <li><Link to="/categoria/accesorios">Accesorios</Link></li>
+                            <li><Link to="/categoria/kenta">KENTA</Link></li>
                         </ul>
                     </div>
+
 
                     {/* Columna 3: Contacto */}
                     <div className="footer-col">
@@ -57,7 +58,7 @@ function Footer() {
                         <p><FaWhatsapp /> +54 9 11 6296 6251</p>
 
                         <p>
-                            <MdOutlineEmail /> 
+                            <MdOutlineEmail />
                             <a href="mailto:laanteojeria@gmail.com" style={{ color: "#333", textDecoration: "none" }}>
                                 laanteojeria@gmail.com
                             </a>
@@ -69,7 +70,7 @@ function Footer() {
                         <div className="footer-social">
 
                             {/* INSTAGRAM */}
-                            <a 
+                            <a
                                 href="https://www.instagram.com/laanteojeria.ar/"
                                 className="social-icon"
                                 target="_blank"
@@ -79,7 +80,7 @@ function Footer() {
                             </a>
 
                             {/* WHATSAPP */}
-                            <a 
+                            <a
                                 href="https://wa.me/5491162966251"
                                 className="social-icon"
                                 target="_blank"
@@ -89,7 +90,7 @@ function Footer() {
                             </a>
 
                             {/* TIKTOK */}
-                            <a 
+                            <a
                                 href="https://www.tiktok.com/@laanteojeria.ar"
                                 className="social-icon"
                                 target="_blank"
