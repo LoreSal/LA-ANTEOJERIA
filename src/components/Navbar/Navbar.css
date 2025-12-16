@@ -9,8 +9,6 @@
 }
 
 /* ========= FILA SUPERIOR ========= */
-/* Estructura: LOGO | BUSCADOR | ICONOS */
-
 .navbar-top-ml {
     display: flex;
     align-items: center;
@@ -28,14 +26,14 @@
     cursor: pointer;
 }
 
-/* BUSCADOR estilo Mercado Libre */
+/* BUSCADOR */
 .navbar-search-ml {
     flex: 1;
     display: flex;
     align-items: center;
     background: #f4f4f4;
     border-radius: 8px;
-    padding: 0 08px;
+    padding: 0 8px;
     border: 1px solid #ddd;
     height: 40px;
 }
@@ -50,14 +48,13 @@
 }
 
 .search-btn-ml {
-    background: #0b4350; /* color acento */
+    background: #0b4350;
     border: none;
     color: white;
-    padding: 0px 12px;
+    padding: 0 12px;
     border-radius: 6px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
-    padding: 0 12px;
 }
 
 .search-btn-ml:hover {
@@ -100,15 +97,14 @@
     border-radius: 10px;
 }
 
-/* Botón hamburguesa (mobile) */
+/* Botón hamburguesa */
 .hamburger-btn-ml {
     background: none;
     border: none;
     display: none;
 }
 
-/* ========= FILA DE CATEGORÍAS ========= */
-
+/* FILA DE CATEGORÍAS */
 .navbar-categorias-ml {
     display: flex;
     justify-content: center;
@@ -137,48 +133,42 @@
 }
 
 /* ========= RESPONSIVE ========= */
-
 @media (max-width: 900px) {
-
     .navbar-top-ml {
         gap: 10px;
+        flex-wrap: wrap; /* permite segunda línea */
     }
 
     .navbar-search-ml {
-        padding: 0 5px;
+        width: 100%;
+        margin-top: 8px;
+        order: 1; /* fuerza que vaya abajo */
     }
 
-    .navbar-search-ml input {
-        font-size: 14px;
-    }
-
-    /* Hamburguesa aparece */
-    .hamburger-btn-ml {
-        display: block;
-        color: #333;
-    }
-
-    /* Ocultamos categorías hasta abrir menú */
     .navbar-categorias-ml {
         flex-direction: column;
         text-align: center;
         gap: 15px;
-        padding: 20px 0;
+        padding: 15px 0;
         display: none;
     }
 
     .navbar-categorias-ml.open {
         display: flex;
     }
+
+    .hamburger-btn-ml {
+        display: block;
+    }
 }
 
 @media (max-width: 600px) {
-
     .navbar-logo-img {
-        height: 48px;
+        height: 60px;
+        width: auto;
     }
 
     .navbar-top-ml {
-        padding: 10px;
+        padding: auto;
     }
 }
